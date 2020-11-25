@@ -884,7 +884,6 @@ table tfoot td {
 }
 
 .wrapper {
-  max-width: 1250px;
   position: relative;
 }
 
@@ -934,6 +933,32 @@ table tfoot td {
   height: 100%;
   padding: 20px 10px;
   background-color: #ffffff;
+  margin-top: 56px;
+}
+
+.sidebar-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 240px;
+  height: 100%;
+  padding: 20px 10px;
+  background-color: #ffffff;
+  margin-top: 56px;
 }
 
 .about {
@@ -948,7 +973,6 @@ table tfoot td {
   -webkit-border-radius: 100%;
           border-radius: 100%;
   overflow: hidden;
-  background-color: #333030;
 }
 
 .about img {
@@ -1003,6 +1027,7 @@ table tfoot td {
 .content-box {
   padding: 20px;
   padding-left: 260px;
+  padding-right: 260px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1019,6 +1044,7 @@ table tfoot td {
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+   margin-top: 56px;
 }
 
 .contact .contact-title {
@@ -1306,6 +1332,17 @@ a.newer-posts:hover {
   text-decoration: underline;
 }
 
+.page-footer .page-category a {
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-left: 5px;
+  color: #263959;
+}
+
+.page-footer .page-category a:hover {
+  text-decoration: underline;
+}
+
 /* - - - - - - - - - - Tag Styles - - - - - - - - - - */
 .blog-tags {
   width: 100%;
@@ -1322,7 +1359,11 @@ a.newer-posts:hover {
 
 .blog-tags h2 {
   color: #263959;
-  margin: 10px 0;
+  margin-top: 30px;
+}
+
+.blog-tags .tag-list {
+  margin-top: 10px;
 }
 
 .tags {
@@ -1362,9 +1403,138 @@ a.newer-posts:hover {
   opacity: .8;
 }
 
+/* - - - - - - - - - - Category Styles - - - - - - - - - - */
+.blog-categories {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 0 20px 20px;
+}
+
+.blog-categories h1 {
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.3;
+  color: #263959;
+}
+
+.blog-categories h2 {
+  color: #263959;
+  margin-top: 30px;
+}
+
+.blog-categories .category-list {
+  margin-top: 10px;
+}
+
+.categories {
+  margin: 0;
+  padding: 10px 40px;
+  border: 1px solid #263959;
+}
+
+.categories li {
+  margin: 5px;
+}
+
+.categories li a {
+  text-decoration: none;
+  color: #263959;
+  display: inline-block;
+  padding: 5px 10px;
+  # border: 1px solid #ecf0f1;
+  # background-color: #fafafa;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.categories li a:hover {
+  background-color: #ecf0f1;
+}
+
+.category-list span a {
+  text-decoration: none;
+  color: #263959;
+}
+
+.category-list span a:hover {
+  text-decoration: underline;
+  opacity: .8;
+}
+
+.sidebar-categories ul {
+  margin: 0;
+  padding: 0px 40px;
+}
+
+.sidebar-categories .category-header {
+  font-size: 25px;
+  margin-left: 15px;
+}
+
+.sidebar-categories ul li {
+  margin: 5px;
+}
+
+.sidebar-categories ul li a {
+  text-decoration: none;
+  color: #263959;
+  padding: 5px 10px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.sidebar-categories ul li a:hover {
+  background-color: #ecf0f1;
+}
+
+/* - - - - - - - - - - About Styles - - - - - - - - - - */
+.blog-about {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 0 20px 20px;
+}
+
+.blog-about h1 {
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.3;
+  color: #263959;
+}
+
+.blog-about ul {
+  margin: 0;
+  padding: 10px 40px;
+  # background-color: #fafafa;
+  border: 1px solid #263959;
+}
+
+.blog-about ul li {
+  margin: 5px;
+}
+
+/* - - - - - - - - - - URL Fragment - - - - - - - - - - */
+/* For the fixed navbar */
+:target::before {
+  content: "";
+  display: block;
+  height: 60px; /* fixed header height*/
+  margin: -60px 0 0; /* negative fixed header height */
+}
+
 /* - - - - - - - - - - Media Styles - - - - - - - - - - */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+   .sidebar-right {
+    display: none;
+   }
+   .navbar {
+     height: 56px;
+   }
+   .content-box {
+    padding-right: 0px;
+   }
   .post {
     width: 48%;
     max-width: 100%;
@@ -1445,10 +1615,19 @@ a.newer-posts:hover {
     -webkit-align-items: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
+     margin-top: 0px;
   }
   .contact-title, .copyright {
     display: none;
   }
+  .navbar {
+     height: auto;
+   }
+  #navbarSupportedContent {
+     background-color: white;
+     margin-top: 8.8px;
+     padding: 10px;
+   }
 }
 
 /* Extra Small Devices, Phones */
