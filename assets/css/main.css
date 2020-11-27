@@ -938,7 +938,7 @@ table tfoot td {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100%;
+  height: auto;
   padding: 20px 10px;
   background-color: #ffffff;
   margin-top: 56px;
@@ -959,7 +959,7 @@ table tfoot td {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100%;
+  height: auto;
   padding: 20px 10px;
   background-color: #ffffff;
   margin-top: 56px;
@@ -1030,7 +1030,7 @@ table tfoot td {
 }
 
 .content-box {
-  padding: 20px;
+  padding: 0 20px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
