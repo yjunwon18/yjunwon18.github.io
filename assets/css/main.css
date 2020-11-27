@@ -897,6 +897,7 @@ table tfoot td {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-grow:1;
 }
 
 .post, .article-page {
@@ -937,12 +938,11 @@ table tfoot td {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 240px;
   height: 100%;
   padding: 20px 10px;
   background-color: #ffffff;
   margin-top: 56px;
-  flex-shrink: 0;
+  flex: 0 0 240px;
 }
 
 .sidebar-right {
@@ -959,12 +959,11 @@ table tfoot td {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 240px;
   height: 100%;
   padding: 20px 10px;
   background-color: #ffffff;
   margin-top: 56px;
-  flex-shrink: 0;
+  flex: 0 0 240px;
 }
 
 .about {
@@ -1049,6 +1048,7 @@ table tfoot td {
       -ms-flex-align: stretch;
           align-items: stretch;
    margin-top: 56px;
+   flex: 1 1 auto;
 }
 
 .contact .contact-title {
