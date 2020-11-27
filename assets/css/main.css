@@ -1053,7 +1053,8 @@ table tfoot td {
 }
 
 .content-box p {
-   margin: auto;
+   margin-top: auto;
+   margin-bottom: auto;
 }
 
 .contact .contact-title {
