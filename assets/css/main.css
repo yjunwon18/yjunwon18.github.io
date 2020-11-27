@@ -22,6 +22,12 @@ body {
   margin: 0;
   line-height: 1.5;
   font-size: 16px;
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /**
@@ -884,7 +890,13 @@ table tfoot td {
 }
 
 .wrapper {
-  position: relative;
+  max-width: 1500px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .post, .article-page {
@@ -925,15 +937,12 @@ table tfoot td {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
   width: 240px;
   height: 100%;
   padding: 20px 10px;
   background-color: #ffffff;
   margin-top: 56px;
+  flex-shrink: 0;
 }
 
 .sidebar-right {
@@ -950,15 +959,12 @@ table tfoot td {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
   width: 240px;
   height: 100%;
   padding: 20px 10px;
   background-color: #ffffff;
   margin-top: 56px;
+  flex-shrink: 0;
 }
 
 .about {
@@ -1026,8 +1032,6 @@ table tfoot td {
 
 .content-box {
   padding: 20px;
-  padding-left: 260px;
-  padding-right: 260px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1524,6 +1528,7 @@ a.newer-posts:hover {
 }
 
 .navbar {
+   max-width: 1500px;
    margin: 0 auto;
 }
 
@@ -1582,9 +1587,20 @@ a.newer-posts:hover {
             justify-content: space-between;
     width: 100%;
     padding: 10px;
+    height: auto;
     background-color: #ffffff;
     -webkit-box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
             box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
+    flex-shrink: 1;
+  }
+  .wrapper{
+      max-width: 1500px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: block;
+      flex-direction: initial;
+      justify-content: center;
   }
   .sidebar footer {
     margin-bottom: 10px;
