@@ -21,16 +21,18 @@ layout: main
       </header>
       <div class="page-footer">
       {{content | markdownify}}
-        <div class="page-tag">
-          {% for tag in page.tags %}
-            <a href="{{site.baseurl}}/tags#{{tag}}" class="tag">&#35; {{ tag }}</a>
-          {% endfor %}
-        </div>
-        <div class="page-category">
-          {% for category in page.categories %}
-            <a href="{{site.baseurl}}/categories#{{ category | cgi_escape }}" class="category">{{ category }}</a>
-          {% endfor %}
-        </div>
+        <div class="page-tail">
+          <div class="page-tag">
+            {% for tag in page.tags %}
+              <a href="{{site.baseurl}}/tags#{{tag}}" class="tag">&#35; {{ tag }}</a>
+            {% endfor %}
+          </div>
+          <div class="page-category">
+            {% for category in page.categories %}
+              <a href="{{site.baseurl}}/categories#{{ category | cgi_escape }}" class="category">{{ category }}</a>
+            {% endfor %}
+          </div>
+         <div>
       </div>
       {% include disqus.html %}
     </div> <!-- End Wrap Content -->
