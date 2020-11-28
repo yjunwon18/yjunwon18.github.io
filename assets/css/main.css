@@ -1344,23 +1344,23 @@ a.newer-posts:hover {
   justify-content: space-between;
 }
 
-.page-footer .page-tail .prev{
+.page-footer .page-tail .prev a{
   text-decoration: none;
   color: #263959;
   margin-top: 30px;
 }
 
-.page-footer .page-tail .prev:hover{
+.page-footer .page-tail .prev a:hover{
   opacity: .8;
 }
 
-.page-footer .page-tail .next{
+.page-footer .page-tail .next a{
   text-decoration: none;
   color: #263959;
   margin-top: 30px;
 }
 
-.page-footer .page-tail .next:hover{
+.page-footer .page-tail .next a:hover{
   opacity: .8;
 }
 
