@@ -38,12 +38,6 @@
     // Initalize lunr with the fields it will be searching on. I've given title
     // a boost of 10 to indicate matches on this field are more important.
     var idx = lunr(function () {
-      // For Korean.
-      this.pipeline.remove(lunr.stemmer);
-      this.pipeline.remove(lunr.stopWordFilter);
-      this.searchPipeline.remove(lunr.stemmer);
-      this.searchPipeline.remove(lunr.stopWordFilter);
-      
       this.ref('id');
       this.field('title', { boost: 10 });
       this.field('content');
