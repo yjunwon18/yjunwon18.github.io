@@ -1,4 +1,3 @@
-<script>
 (function() {
   function displaySearchResults(results, store) {
     var searchResults = document.getElementById('search-results');
@@ -60,4 +59,3 @@
     }
   }
 })();
-</script>
