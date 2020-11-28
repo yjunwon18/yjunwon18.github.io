@@ -1560,8 +1560,44 @@ a.newer-posts:hover {
   margin: 5px;
 }
 
-/* - - - - - - - - - - URL Fragment - - - - - - - - - - */
-/* For the fixed navbar */
+/* - - - - - - - - - - Search Styles - - - - - - - - - - */
+.blog-search {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 0 20px 20px;
+}
+
+.blog-search h1 {
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.3;
+  color: #263959;
+}
+
+.blog-search ul {
+  margin-top: 30px;
+}
+
+.blog-search ul li {
+  margin-bottom: 30px;
+}
+
+.blog-search ul li a {
+  color: #263959;
+  text-decoration: none;
+  font-size: 28px;
+}
+
+.blog-search ul li a:hover{
+  opacity: .8;
+}
+
+.blog-search ul li p {
+  margin-top: 8px;
+}
+
+/* - - - - - - - - - - Navigation Bar Styles - - - - - - - - - - */
+/* For the url fragment */
 :target::before {
   content: "";
   display: block;
