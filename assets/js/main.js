@@ -1,6 +1,5 @@
-<!-- For Search -->
-<script>
-  window.store = {
+// For Search
+window.store = {
     {% for post in site.posts %}
       "{{ post.url | slugify }}": {
         "title": "{{ post.title | xml_escape }}",
@@ -12,4 +11,3 @@
       {% unless forloop.last %},{% endunless %}
     {% endfor %}
   };
-</script>
