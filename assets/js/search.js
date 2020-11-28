@@ -31,8 +31,7 @@
   }
 
   var searchTerm = getQueryVariable('query');
-  console.log(searchTerm);
- /*
+
   if (searchTerm) {
     document.getElementById('search-box').setAttribute("value", searchTerm);
 
@@ -58,5 +57,5 @@
       var results = idx.search(searchTerm); // Get lunr to perform a search
       displaySearchResults(results, window.store); // We'll write this in the next section
     }
-  }*/
+  }
 })();
