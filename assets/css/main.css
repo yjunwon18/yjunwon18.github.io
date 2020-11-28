@@ -967,6 +967,17 @@ table tfoot td {
   flex: 0 0 240px;
 }
 
+.sidebar-right footer {
+  text-align:center;
+}
+.sidebar-right footer a {
+  text-decoration: none;
+  color: #263959;
+}
+.sidebar-right footer a:hover {
+  opacity: .8;
+}
+
 .about {
   margin: 0 0 40px;
   text-align: center;
