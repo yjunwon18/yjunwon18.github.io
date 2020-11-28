@@ -20,7 +20,7 @@ social-email: yjunwon18@gmail.com # add your Email address
 discus-identifier: Junwon # add your discus identifier
 
 # Tracker
-analytics: G-1F93F8W793 # Google Analytics
+# analytics: G-1F93F8W793 # Google Analytics
 
 # Build Settings
 markdown: kramdown
