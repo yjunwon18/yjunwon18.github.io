@@ -9,7 +9,7 @@ site-twitter: #if your site has a twitter account, enter it here
 # Author Settings
 author: Junwon # add your name
 author-img: junwon.jpg # add your photo
-about-author: Welcome! I am a phD student majoring in bioinformatics. # add description
+about-author: Welcome! # add description
 # social-twitter: # add your Twitter handle
 # social-facebook: # add your Facebook handle
 social-github: yjunwon18 # add your Github handle
