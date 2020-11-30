@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Typora: Markdown 편집기
+title: Typora - Markdown 편집기
 date: 2020-11-30
 description: # Add post description (optional)
 img: # Add image post (optional)
