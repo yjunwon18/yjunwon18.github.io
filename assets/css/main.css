@@ -1194,6 +1194,13 @@ footer .copyright {
 .post .post-content {
   padding: 1rem;
   width: 70%;
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
 }
 
 .post .post-content .post-date,
